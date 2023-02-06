@@ -739,3 +739,109 @@ int main(){
 }
 
 --------------------------------------------------------------------------------------------------------------------
+
+ 
+ // W - Mathematical Expression
+ 
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+ 
+ 
+int main(){
+    int num1, num2, num3;
+    char op1, op2;
+    cin>>num1>>op1>>num2>>op2>>num3;
+    
+    if(op1 == 43 && op2 == 61){
+        if(num1+num2 == num3){
+            cout<<"Yes"<<endl;
+        }
+        
+        else{
+            num3 = num1 + num2;
+             cout<<num3<<endl;
+        }
+    }
+    
+    else if(op1 == 45 && op2 == 61){
+        if(num1 - num2 == num3){
+            cout<<"Yes"<<endl;
+        }
+        
+        else{
+            num3 = num1 - num2;
+             cout<<num3<<endl;
+        }
+    }
+    
+   
+    else if(op1 == 42 && op2 == 61){
+       if(num1 * num2 == num3){
+           cout<<"Yes"<<endl;
+       }
+       
+       else{
+           num3 = num1 * num2;
+           
+            cout<<num3<<endl;
+        }
+    }
+    
+    
+    
+    return 0;
+}
+
+
+
+------------------------------------------------------------------------------------------------------------------
+ 
+// X - Two intervals
+ 
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+ 
+ 
+int main(){
+    long long int num1, num2, num3, num4;
+    
+    cin>>num1>>num2>>num3>>num4;
+    
+    long long start, end;
+    
+    if((num3<num1 && num4<num1)|| (num3>num2 && num4 > num2)){
+       
+            cout<<-1<<endl;
+            
+    }
+    
+    else{
+        if(num1 > num3 ){
+            start = num1;
+        }
+        
+        else{
+            start = num3;
+        }
+        
+        if(num2 > num4 ){
+            end = num4;
+        }
+        
+        else{
+            end = num2;
+        }
+        
+         cout<<start<<" "<<end<<endl;
+    }
+    
+   
+    
+    
+    
+    
+    
+    return 0;
+}
