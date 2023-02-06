@@ -154,3 +154,149 @@ int main(int argc, char const *argv[])
     cout<<"round "<< a <<" / " << b << " = " << llround(a/b);
     return 0;
 }
+
+----------------------------------------------------------------------------------
+ 
+// I - Welcome for you with Conditions
+#include<iostream>
+using namespace std;
+ 
+ 
+int main(){
+    int a,b;
+    cin>>a>>b;
+    
+    
+    if(a>=b){
+        cout<<"Yes";
+    }
+    else{
+        
+        cout<<"No";
+        
+    }
+    
+    return 0;
+    
+    
+}
+
+-------------------------------------------------------------------------------------
+ 
+// J - Multiples 
+#include<iostream>
+using namespace std;
+ 
+ 
+int main(){
+    int a,b;
+    cin>>a>>b;
+    
+    
+    if((a%b == 0) || (b%a==0)){
+        cout<<"Multiples";
+    }
+    else{
+        
+        cout<<"No Multiples";
+        
+    }
+    
+    return 0;
+    
+    
+}
+
+---------------------------------------------------------------------------------------
+
+// K - Max and Min 
+ 
+#include<iostream>
+using namespace std;
+ 
+ 
+ 
+int main(int argc, char const *argv[])
+{
+    int a, b, c;
+    cin>>a>>b>>c;
+    
+    
+ 
+    if((a<=b )&& (a <= c)){
+        cout<<a<<" ";
+        if(c>=b){
+            cout<<c;
+        }
+ 
+        else{
+            cout<<b;
+        }
+ 
+        
+ 
+ 
+    }
+    
+ 
+    else if((b <= a) && (b <= c)){
+         cout<<b<<" ";
+ 
+        if (c >= a)
+        {
+            cout<<c;
+        }
+        else{
+            cout<<a;
+        }
+ 
+       
+    }
+ 
+    else{
+        cout<<c<<" ";
+ 
+        if (a >= b)
+        {
+            cout<<a;
+ 
+        }
+        else{
+            cout<<b;
+        }
+ 
+        
+    }
+    return 0;
+}
+
+
+---------------------------------------------------------------------------------------
+ 
+// L - The Brothers
+ 
+#include<iostream>
+#include<string>
+using namespace std;
+ 
+ 
+ 
+int main(int argc, char const *argv[])
+{
+    string f1, s1, f2, s2;
+ 
+    cin>>f1>>s1;
+    cin>>f2>>s2;
+    
+    
+ 
+    if(s1 == s2){
+        cout<<"ARE Brothers";
+    }
+ 
+    else{
+        cout<<"NOT";
+        
+    }
+    return 0;
+}
