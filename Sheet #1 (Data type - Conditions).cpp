@@ -300,3 +300,75 @@ int main(int argc, char const *argv[])
     }
     return 0;
 }
+
+
+---------------------------------------------------------------------------------------------
+ 
+// M - Capital or Small or Digit 
+ 
+#include<iostream>
+#include<string>
+using namespace std;
+ 
+ 
+ 
+int main()
+{
+    char c;
+ 
+ 
+    cin>>c;
+    
+    
+    
+ 
+    if(c >= 48 && c < 65){
+        cout<<"IS DIGIT";
+ 
+    }
+ 
+    else if(c >= 65 && c <= 90){
+        cout<<"ALPHA"<<endl;
+        cout<<"IS CAPITAL";
+        
+    }
+ 
+    else{
+ 
+         cout<<"ALPHA"<<endl;
+        cout<<"IS SMALL";
+ 
+ 
+    }
+ 
+ 
+    return 0;
+}
+
+--------------------------------------------------------------------------------------
+
+ // N - Char
+ 
+#include<bits/stdc++.h> 
+#include<iostream>
+using namespace std;
+ 
+ 
+ 
+int main(int argc, char const *argv[])
+{
+    char c;
+ 
+ 
+    cin>>c;
+    
+    if(c >= 65 && c <= 90){
+        cout<<char(c+32);
+    }
+ 
+    else{
+        cout<<char(c-32);
+ 
+    }
+    return 0;
+}
