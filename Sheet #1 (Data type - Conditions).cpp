@@ -372,3 +372,142 @@ int main(int argc, char const *argv[])
     }
     return 0;
 }
+
+----------------------------------------------------------------------------------------------
+ 
+ // O - Calculator
+ 
+#include<iostream>
+using namespace std;
+ 
+int main(){
+    int a, b;
+    char o;
+ 
+    cin>>a>>o>>b;
+ 
+    if(o == 43){
+        cout<<a+b;
+    }
+    else if(o == 45){
+        cout<<a-b;
+    }
+ 
+    else if(o == 42){
+        cout<<a*b;
+    }
+ 
+    else{
+        cout<<float(a/b);
+    }
+ 
+ 
+    return 0;
+ 
+ 
+}
+
+
+---------------------------------------------------------------------------------------------------------
+
+// P - First digit !
+ 
+#include<iostream>
+using namespace std;
+ 
+int main(){
+    int n;
+    cin>>n;
+ 
+    if(((n / 1000) % 2) == 0){
+        cout<<"EVEN";
+    }
+ 
+    else{
+        cout<<"ODD";
+    }
+ 
+    return 0;
+ 
+ 
+}
+
+
+--------------------------------------------------------------------------------------------------------
+ 
+ // Q - Coordinates of a Point
+ 
+ #include<iostream>
+using namespace std;
+ 
+int main(){
+    float a, b;
+ 
+    cin>>a>>b;
+ 
+    if (a == 0.0 && b == 0.0)
+    {
+        cout<<"Origem";
+    }
+ 
+    else if((a > 0 || a < 0) && b == 0.0){
+        cout<<"Eixo X";
+    }
+ 
+    else if (a == 0.0 && (b>0 || b<0))
+    {
+        cout<<"Eixo Y";
+    }
+ 
+    else if (a >0.0 && b < 0.0)
+    {
+        cout<<"Q4";
+    }
+ 
+    else if (a < 0.0 && b > 0.0)
+    {
+        cout<<"Q2";
+    }
+ 
+    else if (a < 0.0 && b < 0.0)
+    {
+        cout<<"Q3";
+    }
+ 
+    else{
+        cout<<"Q1";
+    }
+ 
+ 
+ 
+    return 0;
+ 
+ 
+}
+
+----------------------------------------------------------------------------------------------------------------
+
+// R - Age in Days 
+
+#include<iostream>
+using namespace std;
+ 
+int main(){
+    int n;
+ 
+    cin>>n;
+ 
+    int years = n / 365;
+ 
+    int month = (n % 365) / 30;
+    int days = ((n % 365)%30)  ;
+ 
+    cout<<years<<" years"<<endl;
+    cout<<month<<" months"<<endl;
+    cout<<days<<" days";
+ 
+ 
+    return 0;
+ 
+ 
+}
