@@ -845,3 +845,64 @@ int main(){
     
     return 0;
 }
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+ 
+// Y - The last 2 digits
+ 
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+ 
+int main(){
+    int a, b, c, d;
+    cin>>a>>b>>c>>d;
+    
+    a %= 100;
+    b %= 100;
+    c %= 100;
+    d %= 100;
+    
+    int res = a*b*c*d;
+    
+    if(res%100 <= 9){
+        cout<<"0"<<res%100<<endl;
+    }
+    
+    else{
+        cout<<res%100<<endl;
+    }
+    
+    
+    return 0;
+    
+    
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+ 
+// Z - Hard Compare
+ 
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+ 
+ 
+int main(){
+    double num1, num2, num3, num4;
+    cin>>num1>>num2>>num3>>num4;
+    
+    double res1 = num2*log(num1);
+    double res2 = num4*log(num3);
+    
+    if(res1 > res2){
+        cout<<"YES"<<endl;
+    }
+    else{
+        cout<<"NO"<<endl;
+    }
+    
+    return 0;
+}
