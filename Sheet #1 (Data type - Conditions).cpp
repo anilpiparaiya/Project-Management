@@ -75,8 +75,23 @@ int main(){
 }
 
 --------------------------------------------------------------------------------------
+// E - Area of a Circle
+ 
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
 
+int main(){
+    double PI = 3.141592653;
+    
+    double r;
+    cin>>r;
+    
+    cout<<fixed<<setprecision(9)<<PI * r * r;
+    return 0;
+}
 
+-------------------------------------------------------------------------------------
 
 // F - Digits Summation
 #include<iostream>
@@ -93,5 +108,49 @@ int main()
     cout<<r1+r2;
  
  
+    return 0;
+}
+
+---------------------------------------------------------------------------------------
+
+// G - Summation from 1 to N 
+ 
+#include <bits/stdc++.h>
+#include<iostream>
+using namespace std;
+ 
+ 
+ 
+int main(int argc, char const *argv[])
+{
+    unsigned long long int n;
+    cin>>n;
+    unsigned long long int sum = (n * (n + 1) / 2);
+    cout<<sum;
+ 
+    return 0;
+}
+
+
+-----------------------------------------------------------------------------------
+ 
+// H - Two numbers
+ 
+#include<iostream>
+#include <bits/stdc++.h>
+using namespace std;
+ 
+ 
+ 
+int main(int argc, char const *argv[])
+{
+    float a, b;
+    cin>>a>>b;
+ 
+    int val = (a+b-1) / b ;
+ 
+    cout<<"floor "<< a <<" / " << b << " = " << int(a/b)<<endl;
+    cout<<"ceil "<< a <<" / " << b << " = " << val<<endl;
+    cout<<"round "<< a <<" / " << b << " = " << llround(a/b);
     return 0;
 }
