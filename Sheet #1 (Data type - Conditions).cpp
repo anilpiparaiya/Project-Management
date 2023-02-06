@@ -554,3 +554,188 @@ int main(){
     
     return 0;
 }
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+ 
+ // T - Sort Numbers
+ 
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+ 
+ 
+int main(){
+    long long int a, b, c;
+    cin>>a>>b>>c;
+    
+    if(a<=b && a <= c){
+        if(b<=c){
+            cout<<a<<endl;
+            cout<<b<<endl;
+            cout<<c<<endl;
+        }
+        
+        else{
+            cout<<a<<endl;
+            cout<<c<<endl;
+            cout<<b<<endl;
+        }
+    }
+    
+    else if(b<=a && b<=c){
+        if(a<c){
+            cout<<b<<endl;
+            cout<<a<<endl;
+            cout<<c<<endl;
+            
+        }
+        else{
+            cout<<b<<endl;
+            cout<<c<<endl;
+            cout<<a<<endl;
+            
+        }
+    }
+    
+    else{
+        if(a<b){
+            cout<<c<<endl;
+            cout<<a<<endl;
+            cout<<b<<endl;
+            
+        }
+        
+        else{
+            cout<<c<<endl;
+            cout<<b<<endl;
+            cout<<a<<endl;
+           
+        }
+    }
+    cout<<endl;
+    cout<<a<<endl;
+    cout<<b<<endl;
+    cout<<c<<endl;
+    
+    return 0;
+    
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+ 
+// U - Float or int 
+ 
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+ 
+ 
+int main(){
+    double num;
+    cin>>num;
+    
+    int numInt = num;
+    
+    double res = num - numInt;
+    
+    if(res > 0){
+        cout<<"float "<<numInt<<" "<<res; 
+    }
+    
+    else{
+        cout<<"int "<<numInt<<endl;
+    }
+    
+    return 0;
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ // V - Comparison Solution 1
+ 
+ #include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+ 
+ 
+int main(){
+    int num1, num2;
+    char op;
+    cin>>num1>>op>>num2;
+    
+    switch(op){
+        case '=':
+            if(num1 == num2) cout<<"Right"<<endl;
+            else cout<<"Wrong"<<endl;
+            break;
+        
+        case '>':
+            if(num1 > num2) cout<<"Right"<<endl;
+            else cout<<"Wrong"<<endl;
+            break;
+        
+        case '<':
+            if(num1 < num2) cout<<"Right"<<endl;
+            else cout<<"Wrong"<<endl;
+            break; 
+           
+    }
+    
+   
+    return 0;
+}
+
+
+// V - Comparison Solution 2
+
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+ 
+ 
+int main(){
+    int num1, num2;
+    char op;
+    cin>>num1>>op>>num2;
+    
+    if(op == 61){
+        if(num1 == num2){
+            cout<<"Right"<<endl;
+        }
+        
+        else{
+             cout<<"Wrong"<<endl;
+        }
+    }
+    
+    else if(op == 62){
+        if(num1 > num2){
+            cout<<"Right"<<endl;
+        }
+        
+        else{
+             cout<<"Wrong"<<endl;
+        }
+    }
+    
+   
+    else if(op == 60){
+       if(num1 < num2){
+           cout<<"Right"<<endl;
+       }
+       
+       else{
+             cout<<"Wrong"<<endl;
+        }
+    }
+    
+    
+    
+    return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------
